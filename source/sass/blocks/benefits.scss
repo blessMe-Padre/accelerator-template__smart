@@ -1,0 +1,95 @@
+.benefits {
+  padding: 120px 0;
+  background-color: $color-porcelain;
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefits__item {
+  position: relative;
+  box-sizing: border-box;
+  padding: 40px 45px;
+  border: 1px solid $color-gallery;
+  transition: all 0.3s ease-in;
+  min-height: 300px;
+
+  @include vp-1023 {
+    min-height: 360px;
+  }
+
+  @include vp-767 {
+    min-height: 340px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: $color-dodger-blue;
+  }
+}
+
+.benefits__item svg {
+  fill: $color-dodger-blue;
+}
+
+.benefits__item:hover svg {
+  fill: $color-athens-aray;
+}
+
+.benefits__item h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: $color-dodger-blue;
+  margin-bottom: 15px;
+
+  @include vp-767 {
+    font-size: 20px;
+  }
+}
+
+.benefits__item:hover h2 {
+  color: $color-athens-aray;
+}
+
+.benefits__item:hover {
+  background-color: $color-dodger-blue;
+}
+
+.benefits__item p {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: $color-dark-blue;
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.benefits__item:hover p {
+  color: $color-athens-aray;
+}
