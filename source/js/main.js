@@ -13,4 +13,34 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     })
   );
+
+
+  // секция about - показать/скрыть параграфы и заменить текст на кнопке
+  const about = document.querySelector('.about__description');
+  const aboutText = about.querySelectorAll('.about__hidden');
+  const aboutBnt = about.querySelector('.button__about');
+
+  function deleteHidden() {
+    aboutText.forEach((p) => {
+      p.classList.toggle('visually-hidden');
+    });
+  }
+
+  function toggleBtnText() {
+    if (aboutBnt.innerHTML === 'Подробнее') {
+      aboutBnt.innerHTML = 'Свернуть';
+    } else {
+      aboutBnt.innerHTML = 'Подробнее';
+    }
+  }
+
+  aboutBnt.addEventListener('click', deleteHidden);
+  aboutBnt.addEventListener('click', toggleBtnText);
+
+
+
+
+
+
+
 });

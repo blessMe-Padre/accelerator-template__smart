@@ -657,6 +657,13 @@ button,
 .button {
   border: none;
   cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 
 .button--main {
@@ -666,14 +673,12 @@ button,
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: #f2f5f7;
   background-color: #00b2ff;
   border-radius: 3px;
   -webkit-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
   transition: all 0.4s linear;
-  text-align: center;
 }
 
 .button--main:hover,
@@ -684,6 +689,27 @@ button,
 
 .button--none {
   display: none;
+}
+
+.button__about {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #00b2ff;
+  background-color: inherit;
+  padding: 13px;
+  border: 1px solid #00b2ff;
+  border-radius: 3px;
+  min-width: 180px;
+}
+
+.button__about:focus,
+.button__about:hover {
+  color: #ffffff;
+  background-color: #00b2ff;
 }
 
 .logo {
@@ -875,6 +901,48 @@ button,
 
 .benefits__item:hover p {
   color: #f2f5f7;
+}
+
+.about {
+  padding: 100px 0;
+  background-color: #f2f5f6;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 150px;
+  flex: 0 0 150px;
+  width: 150px;
+  margin-right: 100px;
+}
+
+.about__img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.about__description h2 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #041827;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.about__description p {
+  line-height: 22px;
+  color: #041827;
 }
 
 .social__list {
@@ -1100,6 +1168,19 @@ button,
     font-size: 14px;
   }
 
+  .about__img {
+    display: none;
+  }
+
+  .about__description h2 {
+    font-size: 28px;
+  }
+
+  .about__description p {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+
   .social__list {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1206,7 +1287,7 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .main {
-    background-image: url("../img/background/main-bg@2x.png");
+    background-image: url("../img/background/main-bg@2x.jpg");
     background-size: cover;
   }
 }

@@ -1,6 +1,10 @@
 .button {
   border: none;
   cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in;
 }
 
 .button--main {
@@ -10,12 +14,10 @@
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: $color-athens-aray;
   background-color: $color-dodger-blue;
   border-radius: 3px;
   transition: all 0.4s linear;
-  text-align: center;
 
   @include vp-1023 {
     font-size: 18px;
@@ -40,4 +42,25 @@
     line-height: 16px;
     display: block;
   }
+}
+
+.button__about {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: $color-dodger-blue;
+  background-color: inherit;
+  padding: 13px;
+  border: 1px solid $color-dodger-blue;
+  border-radius: 3px;
+  min-width: 180px;
+}
+
+.button__about:focus,
+.button__about:hover {
+  color: $color-default-white;
+  background-color: $color-dodger-blue;
 }
