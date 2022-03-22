@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
   const footer = document.querySelector('.footer__wrapper');
   const titles = footer.querySelectorAll('h2');
-  const footerList = footer.querySelectorAll('.footer__list');
 
   titles.forEach((item) =>
     item.addEventListener('click', () => {

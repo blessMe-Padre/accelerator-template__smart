@@ -832,8 +832,12 @@ button,
 }
 
 .footer__wrapper h2 {
+  font-family: 'Roboto Condensed';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
   margin: 0;
-  margin-bottom: 20px;
 }
 
 .footer__sections-wrapper {
@@ -857,13 +861,11 @@ button,
 
 .footer__logo .logo {
   margin-bottom: 35px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .footer__sections {
   padding-right: 10px;
+  position: relative;
 }
 
 .footer__item {
@@ -877,6 +879,14 @@ button,
   font-size: 16px;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer__item a:hover {
+  color: #ffffff;
+}
+
+.footer-pseudo {
+  position: relative;
 }
 
 @media (max-width: 1439px) {
@@ -911,6 +921,7 @@ button,
   }
 
   .main {
+    min-height: 640px;
     padding-left: 0;
   }
 
@@ -969,6 +980,10 @@ button,
     display: none;
   }
 
+  .main {
+    min-height: 560px;
+  }
+
   .main h2 {
     font-size: 36px;
     line-height: 42px;
@@ -982,6 +997,7 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-bottom: 30px;
   }
 
   .footer__wrapper {
@@ -989,7 +1005,26 @@ button,
   }
 
   .footer__wrapper h2 {
+    padding: 20px 0;
     cursor: pointer;
+    position: relative;
+  }
+
+  .footer__wrapper h2::before,
+  .footer__wrapper h2::after {
+    position: absolute;
+    content: '';
+    top: 25px;
+    right: 25px;
+    width: 15px;
+    height: 1px;
+    background: #c4c4c4;
+  }
+
+  .footer__wrapper h2::after {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 
   .footer__list {
@@ -998,6 +1033,20 @@ button,
 
   .footer__list--active .footer__list {
     display: block;
+  }
+
+  .footer__list--active.footer__sections h2::after {
+    width: 0;
+  }
+
+  .footer__list--active.footer__office h2::after {
+    width: 0;
+  }
+
+  .footer__logo .logo {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .footer__logo .logo .logo__title {
@@ -1011,6 +1060,35 @@ button,
   .footer__logo {
     display: block;
     text-align: center;
+  }
+
+  .footer__sections {
+    padding-right: 0;
+    cursor: pointer;
+  }
+
+  .footer__sections::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -25px;
+    width: 100vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .footer-pseudo {
+    cursor: pointer;
+  }
+
+  .footer-pseudo::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: -25px;
+    width: 100vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.7);
   }
 }
 
