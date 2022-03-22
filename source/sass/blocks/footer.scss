@@ -3,3 +3,99 @@
   color: $color-gray;
   background-color: $color-dark-blue;
 }
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr 345px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, min-content);
+  }
+
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.footer__wrapper h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include vp-767 {
+    cursor: pointer;
+  }
+}
+
+.footer__sections-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__sections-wrapper .footer__list {
+  margin-right: 30px;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-right: 10px;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+ .footer__list--active .footer__list {
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.footer__logo .logo {
+  margin-bottom: 35px;
+  justify-content: center;
+}
+
+.footer__logo .logo .logo__title {
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.footer__logo .logo .logo__subtitle {
+  @include vp-767 {
+    display: block;
+  }
+}
+
+.footer__logo {
+  @include vp-1023 {
+    grid-column: 1 / 3;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include vp-767 {
+    display: block;
+    text-align: center;
+  }
+}
+
+.footer__sections {
+  padding-right: 10px;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__item a {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: $color-gray;
+}
