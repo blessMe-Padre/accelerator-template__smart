@@ -1,0 +1,56 @@
+.header {
+  background: $black-to-bottom;
+  width: 100%;
+  position: fixed;
+
+}
+
+.header__wrapper {
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include vp-1023 {
+    min-height: 100px;
+  }
+}
+
+.header__contact a {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color-athens-aray;
+
+  @include vp-1023 {
+    font-size: 0;
+  }
+}
+
+.header__email {
+  margin-right: 70px;
+
+  @include vp-1023 {
+    margin-right: 30px;
+  }
+}
+
+.header__button {
+  color: $color-athens-aray;
+  background-color: inherit;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 1px solid $color-athens-aray;
+  border-radius: 3px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}

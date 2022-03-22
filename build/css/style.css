@@ -654,6 +654,152 @@ button,
   overflow: hidden;
 }
 
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.button--main {
+  padding: 15px 25px;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  background-color: #00b2ff;
+  border-radius: 3px;
+  -webkit-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  text-align: center;
+}
+
+.button--main:hover,
+.button--main:focus {
+  color: #00b2ff;
+  background-color: #f2f5f7;
+}
+
+.button--none {
+  display: none;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo__img img {
+  margin-right: 15px;
+}
+
+.logo__title {
+  color: #f2f5f7;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  margin: 0;
+}
+
+.logo__subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
+  background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  width: 100%;
+  position: fixed;
+}
+
+.header__wrapper {
+  min-height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header__contact a {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #f2f5f7;
+}
+
+.header__email {
+  margin-right: 70px;
+}
+
+.header__button {
+  color: #f2f5f7;
+  background-color: inherit;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border: 1px solid #f2f5f7;
+  border-radius: 3px;
+}
+
+.main {
+  min-height: 880px;
+  padding-left: 150px;
+  color: #f2f5f7;
+  width: 100%;
+  background-image: url("../img/background/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main h2 {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding-top: 300px;
+}
+
+.main p {
+  font-size: 22px;
+  line-height: 155%;
+  margin-bottom: 40px;
+}
+
+.footer {
+  padding: 55px 0;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #041827;
+}
+
 @media (max-width: 1439px) {
   .container {
     padding: 0 40px;
@@ -662,12 +808,80 @@ button,
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 45px;
+    padding: 0 50px;
+  }
+
+  .button--main {
+    font-size: 18px;
+  }
+
+  .header__wrapper {
+    min-height: 100px;
+  }
+
+  .header__contact a {
+    font-size: 0;
+  }
+
+  .header__email {
+    margin-right: 30px;
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .main {
+    padding-left: 0;
+  }
+
+  .main h2 {
+    font-size: 64px;
+    line-height: 75px;
   }
 }
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 15px;
+    padding: 0 25px;
+  }
+
+  .button--main {
+    display: none;
+  }
+
+  .button--none {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+  }
+
+  .logo__img img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo__title {
+    display: none;
+  }
+
+  .logo__subtitle {
+    display: none;
+  }
+
+  .main h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .main p {
+    font-size: 14px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .main {
+    background-image: url("../img/background/main-bg@2x.png");
+    background-size: cover;
   }
 }

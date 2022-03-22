@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+}
+
+.logo__img img {
+  margin-right: 15px;
+
+  @include vp-767 {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.logo__title {
+  color: $color-athens-aray;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  margin: 0;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.logo__subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+
+  @include vp-767 {
+    display: none;
+  }
+}

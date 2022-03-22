@@ -11,11 +11,16 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-quartz:                      #d8d8d9;
-
+$color-athens-aray:                 #f2f5f7;
+$color-dodger-blue:                 #00b2ff;
+$color-dark-blue:                   #041827;
+$color-gray:                        rgba(255, 255, 255, 0.7);
 
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+$black-to-bottom: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 
 // Typography
 // ---------------------------------

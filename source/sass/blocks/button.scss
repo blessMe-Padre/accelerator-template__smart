@@ -1,0 +1,43 @@
+.button {
+  border: none;
+  cursor: pointer;
+}
+
+.button--main {
+  padding: 15px 25px;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-athens-aray;
+  background-color: $color-dodger-blue;
+  border-radius: 3px;
+  transition: all 0.4s linear;
+  text-align: center;
+
+  @include vp-1023 {
+    font-size: 18px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.button--main:hover,
+.button--main:focus {
+  color: $color-dodger-blue;
+  background-color: $color-athens-aray;
+}
+
+.button--none {
+  display: none;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+  }
+}
