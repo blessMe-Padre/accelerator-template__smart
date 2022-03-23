@@ -22,6 +22,10 @@
   padding-left: 30px;
 }
 
+.checkbox__custom--popup span {
+  width: 100%;
+}
+
 .checkbox__custom::before {
   position: absolute;
   content: "";
@@ -33,6 +37,10 @@
   border-radius: 3px;
   background-color: $color-dodger-blue;
   cursor: pointer;
+}
+
+.checkbox__custom--popup::before {
+  top: 0;
 }
 
 .checkbox input:checked + .checkbox__custom::after {
@@ -47,4 +55,8 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.checkbox input:checked + .checkbox__custom--popup::after {
+  top: 0;
 }

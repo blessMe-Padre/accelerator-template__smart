@@ -37,10 +37,46 @@ window.addEventListener('DOMContentLoaded', () => {
   aboutBnt.addEventListener('click', deleteHidden);
   aboutBnt.addEventListener('click', toggleBtnText);
 
+  // popup
+  const headerBnt = document.querySelector('.header__button');
+  const closeBtn = document.querySelector('.popup__btn');
+  const popup = document.querySelector('.popup');
+  const popupBody = document.querySelector('.popup__body');
+  const popupContent = document.querySelector('.popup__content');
+  const body = document.querySelector('.page__body');
+  const userName = document.querySelector('#user-name');
 
 
+  headerBnt.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    popup.classList.add('popup--show');
+    body.classList.add('page__body--lock');
+  });
 
+  closeBtn.addEventListener('click', closePopup);
 
+  function closePopup() {
+    popup.classList.remove('popup--show');
+    body.classList.remove('page__body--lock');
+  }
 
+  // закрываем окно по esc
+  window.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Esc' || evt.key === 'Escape') {
+      if (popup.classList.contains('popup--show')) {
+        evt.preventDefault();
+        popup.classList.remove('popup--show');
+      }
+    }
+  });
+
+  popup.addEventListener('click', function (evt) {
+    evt.stopPropagation();
+    if (evt.target !== popupContent) {
+      console.log('click!!!!!!!popupContent');
+    } else {
+      console.log('click!');
+    }
+  });
 
 });

@@ -728,6 +728,11 @@ button,
   min-width: 265px;
 }
 
+.button__form--popup {
+  min-width: 100%;
+  margin-bottom: 25px;
+}
+
 .button__form:focus,
 .button__form:hover {
   color: #041827;
@@ -1049,6 +1054,7 @@ button,
 }
 
 .form h2 {
+  margin: 0;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
@@ -1177,8 +1183,17 @@ button,
   align-items: center;
 }
 
+.form__submit--popup {
+  display: block;
+}
+
 .form__checkbox {
   position: relative;
+}
+
+.form__item--popup input {
+  display: block;
+  width: 100%;
 }
 
 .checkbox input {
@@ -1206,6 +1221,10 @@ button,
   padding-left: 30px;
 }
 
+.checkbox__custom--popup span {
+  width: 100%;
+}
+
 .checkbox__custom::before {
   position: absolute;
   content: "";
@@ -1217,6 +1236,10 @@ button,
   border-radius: 3px;
   background-color: #00b2ff;
   cursor: pointer;
+}
+
+.checkbox__custom--popup::before {
+  top: 0;
 }
 
 .checkbox input:checked + .checkbox__custom::after {
@@ -1231,6 +1254,67 @@ button,
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.checkbox input:checked + .checkbox__custom--popup::after {
+  top: 0;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 16, 27, 0.7);
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 70;
+}
+
+.popup--show {
+  display: block;
+}
+
+.popup__body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.popup__content {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 500px;
+  padding: 40px;
+  background-color: #00b2ff;
+  border-radius: 5px;
+}
+
+.popup__btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: #00b2ff;
+  background-image: url(../img/close.svg);
+  opacity: .3;
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .social__list {
@@ -1403,6 +1487,10 @@ button,
     margin: 0 auto;
   }
 
+  .popup__content {
+    padding: 20px;
+  }
+
   .footer__wrapper {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -1442,7 +1530,7 @@ button,
 
   .button__form {
     min-width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   .logo__img img {

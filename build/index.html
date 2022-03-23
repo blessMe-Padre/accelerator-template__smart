@@ -206,13 +206,44 @@
                   </label>
                 </div>
               </div>
-
-
             </form>
           </div>
         </div>
       </section>
 
+      <section class="popup">
+        <div class="popup__body">
+          <div class="popup__content">
+            <button class="popup__btn" aria-label="Закрыть"></button>
+            <form class="form" action="https://echo.htmlacademy.ru" method="post">
+              <h2>Закажите звонок</h2>
+              <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+              <div class="form__item form__item--popup">
+                <label class="visually-hidden" for="user-name">Имя</label>
+                <input type="text" id="user-name" name="name" placeholder="Имя" required pattern="[a-zA-Zа-яА-Я]+">
+
+                <label class="visually-hidden" for="user-phone">Номер телефона</label>
+                <input type="tel" id="user-phone" name="phone" placeholder="Телефон" title="89991234567" required
+                  pattern="[0-9]{11}">
+              </div>
+              <label class="visually-hidden" for="appointment-text">Текст письма:</label>
+              <textarea id="appointment-text" name="text" placeholder="Ваш вопрос"></textarea>
+
+              <div class="form__submit form__submit--popup">
+                <button class="button button__form button__form--popup" type="submit">Оставить заявку</button>
+
+                <div class="form__checkbox checkbox">
+                  <input id="formAgreement" checked type="checkbox" name="agreement" required>
+                  <label for="formAgreement" class="checkbox__custom checkbox__custom--popup"><span>Я согласен на
+                      обработку моих персональных
+                      данных</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
     </main>
     <footer class="footer">
