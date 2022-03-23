@@ -179,6 +179,41 @@
         </div>
       </section>
 
+      <section class="feedback">
+        <div class="container">
+          <div class="feedback__item">
+            <form class="form" action="https://echo.htmlacademy.ru" method="post">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+              <div class="form__item">
+                <label class="visually-hidden" for="user-name">Имя</label>
+                <input type="text" id="user-name" name="name" placeholder="Имя" required pattern="[a-zA-Zа-яА-Я]+">
+
+                <label class="visually-hidden" for="user-phone">Номер телефона</label>
+                <input type="tel" id="user-phone" name="phone" placeholder="Телефон" title="89991234567" required
+                  pattern="[0-9]{11}">
+              </div>
+              <label class="visually-hidden" for="appointment-text">Текст письма:</label>
+              <textarea id="appointment-text" name="text" placeholder="Ваш вопрос"></textarea>
+
+              <div class="form__submit">
+                <button class="button button__form" type="submit">Оставить заявку</button>
+
+                <div class="form__checkbox checkbox">
+                  <input id="formAgreement" checked type="checkbox" name="agreement" required>
+                  <label for="formAgreement" class="checkbox__custom"><span>Я согласен на обработку моих персональных
+                      данных</span>
+                  </label>
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+        </div>
+      </section>
+
+
     </main>
     <footer class="footer">
       <div class="container">
