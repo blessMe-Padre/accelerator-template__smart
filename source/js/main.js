@@ -1,19 +1,29 @@
+
 window.addEventListener('DOMContentLoaded', () => {
   const footer = document.querySelector('.footer__wrapper');
   const titles = footer.querySelectorAll('h2');
+  const footerItem = footer.querySelectorAll('.footer__item');
+
+  footerItem.forEach((item) => {
+    item.classList.remove('footer-list-active');
+  });
 
   titles.forEach((item) =>
     item.addEventListener('click', () => {
       const parent = item.parentNode;
 
-      if (parent.classList.contains('footer__list--active')) {
-        parent.classList.remove('footer__list--active');
+      if (parent.classList.contains('footer-list-active')) {
+        parent.classList.remove('footer-list-active');
       } else {
-        parent.classList.add('footer__list--active');
+        closeTab();
+        parent.classList.add('footer-list-active');
       }
     })
   );
 
+  function closeTab() {
+    footerItem.forEach((child) => child.classList.remove('footer-list-active'));
+  }
 
   // секция about - показать/скрыть параграфы и заменить текст на кнопке
   const about = document.querySelector('.about__description');
@@ -42,18 +52,18 @@ window.addEventListener('DOMContentLoaded', () => {
   const closeBtn = document.querySelector('.popup__btn');
   const popup = document.querySelector('.popup');
   const popupBody = document.querySelector('.popup__body');
-  const popupContent = document.querySelector('.popup__content');
   const body = document.querySelector('.page__body');
-  const userName = document.querySelector('#user-name');
+  const userName = document.querySelector('#loginName');
 
 
-  headerBnt.addEventListener('click', function (evt) {
-    evt.preventDefault();
+  headerBnt.addEventListener('click', openPopup);
+  closeBtn.addEventListener('click', closePopup);
+
+  function openPopup() {
+    userName.focus();
     popup.classList.add('popup--show');
     body.classList.add('page__body--lock');
-  });
-
-  closeBtn.addEventListener('click', closePopup);
+  }
 
   function closePopup() {
     popup.classList.remove('popup--show');
@@ -70,13 +80,69 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // закрываем окно по клику вне попапа
   popup.addEventListener('click', function (evt) {
-    evt.stopPropagation();
-    if (evt.target !== popupContent) {
-      console.log('click!!!!!!!popupContent');
-    } else {
-      console.log('click!');
+    if (evt.target === popupBody) {
+      closePopup();
     }
   });
 
+  // localstorage
+  const formInput = document.querySelectorAll('input');
+
+  formInput.forEach((el) => {
+    el.addEventListener('change', changeHandler);
+  });
+
+  // записывает изменение значения инпута в localStorage
+  function changeHandler(e) {
+    localStorage.setItem(e.target.name, e.target.value);
+  }
+
+  // записывает значения инпута из localStorage в инпут формы
+  function getCheckStorage() {
+    for (let i = 0; i < formInput.length; i++) {
+      formInput[i].value = localStorage.getItem(formInput[i].name);
+    }
+  }
+  getCheckStorage();
+
+  // записывает значения чекбокса в localStorage
+  const checkbox = document.querySelector('#formAgreement');
+  checkbox.addEventListener('change', function () {
+    if (checkbox.checked) {
+      localStorage.setItem('agreement', 'true');
+    } else {
+      localStorage.setItem('agreement', 'false');
+    }
+  });
+
+  // записывает значения textarea в localStorage
+  const textarea = document.querySelector('#appointment-text');
+  textarea.addEventListener('change', changeHandler);
+
+  // получает значения textarea из localStorage
+  function getCheckStorageText() {
+    textarea.value = localStorage.getItem(textarea.name);
+  }
+  getCheckStorageText();
+
+
+  // плавный скрол до формы
+  const mainBtn = document.querySelectorAll('.button--main');
+  const feedback = document.querySelector('.feedback');
+
+  function scrollTo(el) {
+    window.scroll({
+      left: 0,
+      top: el.offsetTop,
+      behavior: 'smooth',
+    });
+  }
+
+  mainBtn.forEach((item) => {
+    item.addEventListener('click', () => {
+      scrollTo(feedback);
+    });
+  });
 });

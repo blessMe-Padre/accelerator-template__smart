@@ -71,13 +71,13 @@
   }
 }
 
- .footer__list--active .footer__list {
+ .footer-list-active .footer__list {
   @include vp-767 {
     display: block;
   }
 }
 
-.footer__list--active.footer__sections h2 {
+.footer-list-active.footer__sections h2 {
   @include vp-767 {
     &::after {
       width: 0;
@@ -85,7 +85,7 @@
   }
 }
 
-.footer__list--active.footer__office h2 {
+.footer-list-active.footer__office h2 {
   @include vp-767 {
     &::after {
       width: 0;

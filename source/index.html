@@ -27,12 +27,12 @@
             </div>
           </div>
           <div class="header__contact">
-            <a href="mailto:info@sd.ru" class="header__email">
+            <a href="mailto:info@sd.ru" class="header__email" aria-label="Написать письмо">
               <svg width="20" height="20">
                 <use xlink:href="img/sprite/sprite.svg#email"></use>
               </svg>
               info@sd.ru</a>
-            <a href="tel:+74950005252" class="header__tel">
+            <a href="tel:+74950005252" class="header__tel" aria-label="позвонить">
               <svg width="21" height="20">
                 <use xlink:href="img/sprite/sprite.svg#phone"></use>
               </svg>+7 (495) 000 52 52</a>
@@ -219,8 +219,8 @@
               <h2>Закажите звонок</h2>
               <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
               <div class="form__item form__item--popup">
-                <label class="visually-hidden" for="user-name">Имя</label>
-                <input type="text" id="user-name" name="name" placeholder="Имя" required pattern="[a-zA-Zа-яА-Я]+">
+                <label class="visually-hidden" for="loginName">Имя</label>
+                <input type="text" id="loginName" name="name" placeholder="Имя" required pattern="[a-zA-Zа-яА-Я]+">
 
                 <label class="visually-hidden" for="user-phone">Номер телефона</label>
                 <input type="tel" id="user-phone" name="phone" placeholder="Телефон" title="89991234567" required
@@ -233,9 +233,10 @@
                 <button class="button button__form button__form--popup" type="submit">Оставить заявку</button>
 
                 <div class="form__checkbox checkbox">
-                  <input id="formAgreement" checked type="checkbox" name="agreement" required>
-                  <label for="formAgreement" class="checkbox__custom checkbox__custom--popup"><span>Я согласен на
-                      обработку моих персональных
+                  <input id="checkbox" checked type="checkbox" name="agreement" required>
+                  <label for="checkbox" class="checkbox__custom checkbox__custom--popup"><span>Я
+                      согласен на
+                      обработку персональных
                       данных</span>
                   </label>
                 </div>
@@ -287,7 +288,7 @@
               </ul>
             </div>
           </div>
-          <div class="footer__sections footer-pseudo">
+          <div class="footer__item footer__sections footer-pseudo footer-list-active">
             <h2>Разделы сайта</h2>
             <div class="footer__sections-wrapper">
               <ul class="footer__list">
@@ -317,7 +318,7 @@
               </ul>
             </div>
           </div>
-          <div class="footer__office footer-pseudo">
+          <div class="footer__item footer__office footer-pseudo footer-list-active">
             <h2>Наш офис</h2>
             <ul class="footer__list">
               <li class="footer__item">

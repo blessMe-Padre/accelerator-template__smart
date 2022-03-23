@@ -1210,6 +1210,10 @@ button,
   clip-path: inset(100%);
 }
 
+.checkbox input:focus + .checkbox__custom::before {
+  outline: 2px solid #e59700;
+}
+
 .checkbox__custom span {
   display: block;
   width: 235px;
@@ -1647,15 +1651,15 @@ button,
     display: none;
   }
 
-  .footer__list--active .footer__list {
+  .footer-list-active .footer__list {
     display: block;
   }
 
-  .footer__list--active.footer__sections h2::after {
+  .footer-list-active.footer__sections h2::after {
     width: 0;
   }
 
-  .footer__list--active.footer__office h2::after {
+  .footer-list-active.footer__office h2::after {
     width: 0;
   }
 
