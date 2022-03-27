@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable new-cap */
+import IMask from 'imask';
 
 window.addEventListener('DOMContentLoaded', () => {
   const footer = document.querySelector('.footer__wrapper');
@@ -28,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // секция about - показать/скрыть параграфы и заменить текст на кнопке
   const about = document.querySelector('.about__description');
   const aboutText = about.querySelectorAll('.about__hidden');
-  const aboutBnt = about.querySelector('.button__about');
+  const aboutBnt = about.querySelector('.button--about');
 
   function deleteHidden() {
     aboutText.forEach((p) => {
@@ -145,4 +148,14 @@ window.addEventListener('DOMContentLoaded', () => {
       scrollTo(feedback);
     });
   });
+
+  // маска телефона
+  let element = document.getElementById('user-phone');
+  let maskOptions = {
+    mask: '+{7}(000)000-00-00',
+  };
+  let mask1 = IMask(element, maskOptions);
+
+  let element2 = document.getElementById('phone');
+  let mask2 = IMask(element2, maskOptions);
 });

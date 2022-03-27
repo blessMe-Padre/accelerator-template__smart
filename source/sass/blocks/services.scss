@@ -1,11 +1,23 @@
 .services {
   padding-top: 55px;
-  padding-bottom: 155px;
+  padding-bottom: 142px;
   background-color: $color-dark-blue;
   font-family: 'Roboto Condensed';
   color: $color-default-white;
-
 }
+
+.services h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  margin-top: 10px;
+  margin-bottom: 53px;
+
+  @include vp-1023 {
+    font-size: 28px;
+  }
+}
+
 
 .services__list {
   margin: 0;
@@ -18,17 +30,6 @@
   @include vp-1023 {
     grid-template-columns: 1fr;
     gap: 30px;
-  }
-}
-
-.services__title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 51px;
-  margin-bottom: 50px;
-
-  @include vp-1023 {
-    font-size: 28px;
   }
 }
 
@@ -55,7 +56,7 @@
 
 .services__card p {
   position: absolute;
-  top: 50px;
+  top: 27px;
   left: 40px;
   max-width: 190px;
   color: $color-default-white;

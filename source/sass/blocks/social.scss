@@ -1,6 +1,7 @@
 .social__list {
   margin: 0;
   padding: 0;
+  padding-left: 15px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +13,7 @@
 }
 
 .social__item {
-  margin-right: 20px;
+  margin-right: 25px;
   transition: all 0.3s linear;
 }
 

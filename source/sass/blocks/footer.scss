@@ -57,13 +57,14 @@
 }
 
 .footer__sections-wrapper .footer__list {
-  margin-right: 30px;
+  margin-right: 0;
 }
 
 .footer__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 240px;
   padding-right: 10px;
 
   @include vp-767 {
@@ -94,7 +95,7 @@
 }
 
 .footer__logo .logo {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   @include vp-767 {
     justify-content: center;
@@ -127,6 +128,7 @@
 }
 
 .footer__sections {
+  padding-left: 127px;
   padding-right: 10px;
   position: relative;
 
@@ -145,11 +147,20 @@
   }
 }
 
-.footer__item {
-  margin-bottom: 10px;
+.footer__list-item {
+  margin-bottom: 7px;
 }
 
-.footer__item a {
+.footer__list-item address {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: $color-gray;
+}
+
+.footer__list-item a {
   font-family: 'PT Mono';
   font-style: normal;
   font-weight: 400;
@@ -180,6 +191,8 @@
 }
 
 .footer__office .footer__list {
+  max-width: 340px;
+
   @include vp-767 {
     padding-bottom: 20px;
   }
