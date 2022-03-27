@@ -668,7 +668,7 @@ button,
 
 .button--main {
   padding: 16px 30px;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -693,7 +693,7 @@ button,
 }
 
 .button--about {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -716,7 +716,7 @@ button,
 
 .button--form {
   padding: 15px 25px;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -753,7 +753,7 @@ button,
 
 .logo__title {
   color: #f2f5f7;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -762,7 +762,7 @@ button,
 }
 
 .logo__subtitle {
-  font-family: 'Roboto';
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -814,7 +814,7 @@ button,
 }
 
 .header__contact a {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -839,7 +839,7 @@ button,
 .header__button {
   color: #f2f5f7;
   background-color: inherit;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -871,7 +871,7 @@ button,
 }
 
 .main h2 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -922,7 +922,7 @@ button,
 
 .benefits__item::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   width: 5px;
@@ -943,7 +943,7 @@ button,
 .benefits__item h2 {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -965,7 +965,7 @@ button,
 .benefits__item p {
   margin: 0;
   padding: 0;
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1005,7 +1005,7 @@ button,
 }
 
 .about__description h2 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1026,7 +1026,7 @@ button,
   padding-top: 55px;
   padding-bottom: 142px;
   background-color: #041827;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   color: #ffffff;
 }
 
@@ -1107,7 +1107,7 @@ button,
 
 .form h2 {
   margin: 0;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -1292,7 +1292,7 @@ button,
   width: 235px;
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
   cursor: pointer;
   padding-left: 30px;
@@ -1391,12 +1391,12 @@ button,
   height: 40px;
   border: 0;
   background-color: #00b2ff;
-  background-image: url(../img/close.svg);
-  opacity: .3;
+  background-image: url("../img/close.svg");
+  opacity: 0.3;
   cursor: pointer;
-  -webkit-transition: all .3s linear;
-  -o-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .form--popup input {
@@ -1442,7 +1442,7 @@ button,
 }
 
 .footer__wrapper h2 {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 16px;
@@ -1487,7 +1487,7 @@ button,
 }
 
 .footer__list-item address {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1496,7 +1496,7 @@ button,
 }
 
 .footer__list-item a {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1579,7 +1579,7 @@ button,
     letter-spacing: 5.5px;
     margin-bottom: 0;
     padding-top: 180px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .main p {
@@ -1841,7 +1841,6 @@ button,
   }
 
   .benefits__item {
-    min-height: 340px;
     padding: 25px 30px 30px 30px;
     min-height: 340px;
   }
@@ -1898,7 +1897,7 @@ button,
 
   .services__title--hidden {
     display: block;
-    font-family: 'Roboto Condensed';
+    font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -1987,7 +1986,7 @@ button,
   .footer__wrapper h2::before,
   .footer__wrapper h2::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 26px;
     right: 0;
     width: 15px;
@@ -2005,7 +2004,7 @@ button,
     display: none;
   }
 
-  .footer-list-active .footer__list {
+  .footer-list-active.footer__list {
     display: block;
   }
 
@@ -2044,7 +2043,7 @@ button,
 
   .footer__sections::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 0;
     left: -25px;
     width: 100vw;
@@ -2070,7 +2069,7 @@ button,
 
   .footer-pseudo::after {
     position: absolute;
-    content: '';
+    content: "";
     bottom: 0;
     left: -25px;
     width: 100vw;
