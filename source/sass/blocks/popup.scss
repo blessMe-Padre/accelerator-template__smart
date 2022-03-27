@@ -47,10 +47,10 @@
   height: 40px;
   border: 0;
   background-color: $color-dodger-blue;
-  background-image: url(../img/close.svg);
-  opacity: .3;
+  background-image: url("../img/close.svg");
+  opacity: 0.3;
   cursor: pointer;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .form--popup input {

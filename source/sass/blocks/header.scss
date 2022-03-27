@@ -29,7 +29,7 @@
 
   @include vp-1023 {
     width: 200px;
-    justify-content: flex-end
+    justify-content: flex-end;
   }
 }
 
@@ -43,14 +43,13 @@
 }
 
 .header__contact a {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Arial", "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: $color-athens-aray;
   padding-bottom: 15px;
-
 
   @include vp-1023 {
     font-size: 0;
@@ -59,7 +58,7 @@
 }
 
 .header__contact a:hover {
-  color: darken($color-athens-aray, 20%) ;
+  color: darken($color-athens-aray, 20%);
 }
 
 .header__email {
@@ -86,7 +85,7 @@
 .header__button {
   color: $color-athens-aray;
   background-color: inherit;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
