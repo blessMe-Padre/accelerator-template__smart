@@ -667,7 +667,7 @@ button,
 }
 
 .button--main {
-  padding: 15px 30px;
+  padding: 16px 30px;
   font-family: 'Roboto Condensed';
   font-weight: 700;
   font-size: 18px;
@@ -1085,6 +1085,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   border: none;
+  background-color: #00b2ff;
   background-image: url("../img/background/feedback-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1451,7 +1452,7 @@ button,
 }
 
 .footer__list-item {
-  margin-bottom: 7px;
+  margin-bottom: 6px;
 }
 
 .footer__list-item address {
@@ -1497,18 +1498,39 @@ button,
 
   .button--main {
     font-size: 18px;
+    margin-left: 44px;
+  }
+
+  .button--about {
+    margin-top: -5px;
   }
 
   .header__wrapper {
     min-height: 100px;
   }
 
+  .logo__text {
+    margin-top: 2px;
+  }
+
+  .header__contact {
+    width: 200px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+
   .header__contact a {
     font-size: 0;
+    padding-bottom: 20px;
   }
 
   .header__email {
-    margin-right: 30px;
+    margin-right: 26px;
+  }
+
+  .header__tel {
+    padding-right: 14px;
   }
 
   .header__button {
@@ -1523,14 +1545,54 @@ button,
   .main h2 {
     font-size: 64px;
     line-height: 75px;
+    letter-spacing: 5.5px;
+    margin-bottom: 0;
+    padding-top: 180px;
+    padding-left: 0px;
+  }
+
+  .main p {
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 73px;
+  }
+
+  .benefits {
+    padding: 80px 0;
   }
 
   .benefits__item {
+    padding: 40px 30px 30px 45px;
     min-height: 360px;
   }
 
+  .benefits__item svg {
+    margin-bottom: 8px;
+  }
+
+  .benefits__item h2 {
+    margin-bottom: 10px;
+  }
+
+  .about {
+    padding-bottom: 80px;
+  }
+
+  .about__img {
+    margin-right: 25px;
+  }
+
+  .about__description h2 {
+    margin-bottom: 8px;
+  }
+
+  .services {
+    padding-top: 47px;
+    padding-bottom: 76px;
+  }
+
   .services h2 {
-    font-size: 28px;
+    margin-bottom: 35px;
   }
 
   .services__list {
@@ -1545,20 +1607,64 @@ button,
   }
 
   .services__card p {
-    top: 40px;
+    top: 18px;
+    left: 45px;
   }
 
   .feedback {
+    padding: 45px 0;
     background: none;
     background-color: #00b2ff;
+    min-height: 579px;
   }
 
   .feedback__item {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .form h2 {
+    margin-bottom: 7px;
+  }
+
+  .form p {
+    margin-top: 0;
+    margin-bottom: 26px;
+  }
+
+  .form input {
+    width: 320px;
+  }
+
+  .form textarea {
+    padding-top: 30px;
+  }
+
+  .form__submit {
+    max-width: 586px;
+  }
+
+  .checkbox__custom span {
+    padding-left: 25px;
+  }
+
+  .checkbox__custom::before {
+    top: 5px;
+  }
+
+  .checkbox input:checked + .checkbox__custom::after {
+    top: 6px;
   }
 
   .popup__content {
     padding: 20px;
+  }
+
+  .social__item {
+    margin-right: 0;
+    margin-left: 25px;
+    margin-top: 5px;
   }
 
   .footer__wrapper {
@@ -1580,6 +1686,23 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+  }
+
+  .footer__sections {
+    margin-top: 3px;
+    padding-left: 0;
+  }
+
+  .footer__list-item {
+    margin-bottom: 5px;
+  }
+
+  .footer__office {
+    padding-left: 17px;
+  }
+
+  .footer__office h2 {
+    margin-top: 5px;
   }
 }
 

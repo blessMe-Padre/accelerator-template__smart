@@ -132,6 +132,11 @@
   padding-right: 10px;
   position: relative;
 
+  @include vp-1023 {
+    margin-top: 3px;
+    padding-left: 0;
+  }
+
   @include vp-767 {
     padding-right: 0;
     cursor: pointer;
@@ -148,7 +153,11 @@
 }
 
 .footer__list-item {
-  margin-bottom: 7px;
+  margin-bottom: 6px;
+
+  @include vp-1023 {
+    margin-bottom: 5px;
+  }
 }
 
 .footer__list-item address {
@@ -187,6 +196,18 @@
       height: 1px;
       background: $color-gray;
     }
+  }
+}
+
+.footer__office {
+  @include vp-1023 {
+    padding-left: 17px;
+  }
+}
+
+.footer__office h2 {
+  @include vp-1023 {
+    margin-top: 5px;;
   }
 }
 

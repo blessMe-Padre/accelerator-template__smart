@@ -16,12 +16,23 @@
   }
 }
 
+.logo__text {
+  @include vp-1023 {
+    margin-top: 2px;
+  }
+}
+
 .header__contact {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   width: 480px;
+
+  @include vp-1023 {
+    width: 200px;
+    justify-content: flex-end
+  }
 }
 
 .header__contact svg {
@@ -41,6 +52,7 @@
 
   @include vp-1023 {
     font-size: 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -53,12 +65,16 @@
   margin-right: 20px;
 
   @include vp-1023 {
-    margin-right: 30px;
+    margin-right: 26px;
   }
 }
 
 .header__tel {
   padding-right: 10px;
+
+  @include vp-1023 {
+    padding-right: 14px;
+  }
 }
 
 .header__button {

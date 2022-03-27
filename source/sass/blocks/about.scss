@@ -1,6 +1,10 @@
 .about {
   background-color: $color-porcelain;
   padding-bottom: 100px;
+
+  @include vp-1023 {
+    padding-bottom: 80px;
+  }
 }
 
 .about__wrapper {
@@ -11,6 +15,10 @@
   flex: 0 0 150px;
   width: 150px;
   margin-right: 100px;
+
+  @include vp-1023 {
+    margin-right: 25px;
+  }
 
   @include vp-767 {
     display: none;
@@ -32,6 +40,10 @@
   color: $color-dark-blue;
   margin: 0;
   margin-bottom: 13px;
+
+  @include vp-1023 {
+    margin-bottom: 8px;
+  }
 
   @include vp-767 {
     font-size: 28px;

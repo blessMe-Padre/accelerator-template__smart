@@ -3,6 +3,7 @@
   padding: 150px 0;
   display: flex;
   border: none;
+  background-color: $color-dodger-blue;
   background-image: url("../img/background/feedback-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -14,8 +15,10 @@
   }
 
   @include vp-1023 {
+    padding: 45px 0;
     background: none;
     background-color: $color-dodger-blue;
+    min-height: 579px;
   }
 }
 
@@ -27,7 +30,9 @@
   padding: 20px 10px 20px 27px;
 
   @include vp-1023 {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
   }
 
   @include vp-767 {

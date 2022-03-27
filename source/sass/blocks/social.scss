@@ -15,6 +15,12 @@
 .social__item {
   margin-right: 25px;
   transition: all 0.3s linear;
+
+  @include vp-1023 {
+    margin-right: 0;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
 }
 
 .social__item:hover {
