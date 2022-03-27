@@ -27,9 +27,12 @@
   position: relative;
   box-sizing: border-box;
   max-width: 500px;
-  padding: 40px;
+  height: 610px;
+  padding: 37px;
   background-color: $color-dodger-blue;
   border-radius: 5px;
+  margin-left: -15px;
+  margin-top: -230px;
 
   @include vp-1023 {
     padding: 20px;
@@ -48,4 +51,8 @@
   opacity: .3;
   cursor: pointer;
   transition: all .3s linear;
+}
+
+.form--popup input {
+  margin-bottom: 15px;
 }

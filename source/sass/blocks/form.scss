@@ -127,3 +127,21 @@
   display: block;
   width: 100%;
 }
+
+.form--popup h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140.62%;
+  margin-bottom: 4px;
+}
+
+.form--popup p {
+  max-width: 380px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.form--popup textarea {
+  margin-bottom: 20px;
+}
