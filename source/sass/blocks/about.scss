@@ -5,6 +5,10 @@
   @include vp-1023 {
     padding-bottom: 80px;
   }
+
+  @include vp-767 {
+    padding-bottom: 78px;
+  }
 }
 
 .about__wrapper {
@@ -59,5 +63,11 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 134.4%;;
+  }
+}
+
+.about__description span {
+  @include vp-767 {
+    display: none;
   }
 }

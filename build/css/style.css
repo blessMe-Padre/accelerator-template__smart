@@ -1030,12 +1030,16 @@ button,
   color: #ffffff;
 }
 
-.services h2 {
+.services__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
   margin-top: 10px;
   margin-bottom: 53px;
+}
+
+.services__title--hidden {
+  display: none;
 }
 
 .services__list {
@@ -1505,12 +1509,12 @@ button,
     margin-top: -5px;
   }
 
-  .header__wrapper {
-    min-height: 100px;
-  }
-
   .logo__text {
     margin-top: 2px;
+  }
+
+  .header__wrapper {
+    min-height: 100px;
   }
 
   .header__contact {
@@ -1591,7 +1595,7 @@ button,
     padding-bottom: 76px;
   }
 
-  .services h2 {
+  .services__title {
     margin-bottom: 35px;
   }
 
@@ -1653,8 +1657,18 @@ button,
     top: 5px;
   }
 
+  .checkbox__custom::before {
+    top: 8px;
+    left: 4px;
+  }
+
   .checkbox input:checked + .checkbox__custom::after {
     top: 6px;
+  }
+
+  .checkbox input:checked + .checkbox__custom::after {
+    top: 10px;
+    left: 7px;
   }
 
   .popup__content {
@@ -1719,16 +1733,24 @@ button,
     font-size: 14px;
     line-height: 16px;
     display: block;
+    padding: 13px 30px;
+    margin-left: 0;
+  }
+
+  .button--about {
+    min-width: 160px;
+    padding: 8px;
   }
 
   .button--form {
     min-width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   .logo__img img {
     width: 35px;
     height: 35px;
+    margin-top: -15px;
   }
 
   .logo__title {
@@ -1739,27 +1761,74 @@ button,
     display: none;
   }
 
+  .logo__text {
+    text-align: left;
+  }
+
+  .logo__img--footer img {
+    width: 55px;
+    height: 55px;
+    margin-top: -3px;
+    margin-left: 25px;
+  }
+
+  .header__wrapper {
+    min-height: 80px;
+  }
+
+  .header__contact svg {
+    margin-right: 10px;
+  }
+
+  .header__tel {
+    padding-right: 10px;
+  }
+
   .main {
     min-height: 560px;
   }
 
   .main h2 {
-    padding-top: 200px;
+    padding-top: 151px;
     font-size: 36px;
     line-height: 42px;
+    letter-spacing: 2.7px;
+    margin-bottom: 8px;
   }
 
   .main p {
     font-size: 14px;
+    margin-bottom: 43px;
+  }
+
+  .benefits {
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 
   .benefits__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
   }
 
   .benefits__item {
     min-height: 340px;
+    padding: 25px 30px 30px 30px;
+    min-height: 340px;
+  }
+
+  .benefits__item--height {
+    min-height: 325px;
+  }
+
+  .benefits__item--height h2 {
+    margin-bottom: 16px;
+  }
+
+  .benefits__item svg {
+    margin-left: -4px;
   }
 
   .benefits__item h2 {
@@ -1768,6 +1837,10 @@ button,
 
   .benefits__item p {
     font-size: 14px;
+  }
+
+  .about {
+    padding-bottom: 78px;
   }
 
   .about__img {
@@ -1783,29 +1856,93 @@ button,
     line-height: 134.4%;
   }
 
+  .about__description span {
+    display: none;
+  }
+
+  .services {
+    padding-top: 38px;
+    padding-bottom: 86px;
+  }
+
+  .services__title {
+    display: none;
+  }
+
+  .services__title--hidden {
+    display: block;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 28px;
+  }
+
   .services__card p {
+    max-width: 170px;
     font-size: 18px;
-    top: 30px;
+    top: 9px;
     left: 30px;
+  }
+
+  .feedback {
+    padding-top: 38px;
+    padding-bottom: 80px;
   }
 
   .feedback__item {
     padding: 10px 0;
   }
 
+  .form h2 {
+    font-size: 30px;
+    line-height: 140.62%;
+  }
+
+  .form__item {
+    margin-bottom: 12px;
+  }
+
+  .form p {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-bottom: 35px;
+  }
+
   .form input {
     width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form textarea {
+    padding-top: 23px;
+    height: 180px;
+    margin-bottom: 22px;
   }
 
   .form__submit {
     display: block;
   }
 
+  .checkbox__custom span {
+    padding-left: 30px;
+  }
+
   .social__list {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
+  }
+
+  .social__item {
+    margin-right: 16px;
+    margin-left: 9px;
+  }
+
+  .footer {
+    padding-top: 38px;
   }
 
   .footer__wrapper {
@@ -1815,6 +1952,7 @@ button,
   .footer__wrapper h2 {
     padding: 20px 0;
     margin-bottom: 0;
+    letter-spacing: 0.05em;
     cursor: pointer;
     position: relative;
   }
@@ -1823,8 +1961,8 @@ button,
   .footer__wrapper h2::after {
     position: absolute;
     content: '';
-    top: 25px;
-    right: 25px;
+    top: 26px;
+    right: 0;
     width: 15px;
     height: 1px;
     background: #c4c4c4;
@@ -1853,9 +1991,10 @@ button,
   }
 
   .footer__logo .logo {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: 15px;
   }
 
   .footer__logo .logo .logo__title {
@@ -1886,6 +2025,18 @@ button,
     background: rgba(255, 255, 255, 0.7);
   }
 
+  .footer__list-item address {
+    font-size: 14px;
+    line-height: 135%;
+    margin-bottom: 14px;
+  }
+
+  .footer__list-item a {
+    font-size: 14px;
+    line-height: 135%;
+    margin-bottom: 6px;
+  }
+
   .footer-pseudo {
     cursor: pointer;
   }
@@ -1900,8 +2051,13 @@ button,
     background: rgba(255, 255, 255, 0.7);
   }
 
+  .footer__office {
+    padding-left: 0;
+  }
+
   .footer__office .footer__list {
-    padding-bottom: 20px;
+    padding-right: 0;
+    padding-bottom: 15px;
   }
 }
 

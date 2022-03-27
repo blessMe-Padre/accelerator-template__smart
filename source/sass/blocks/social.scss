@@ -8,7 +8,7 @@
 
   @include vp-767 {
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 }
 
@@ -20,6 +20,11 @@
     margin-right: 0;
     margin-left: 25px;
     margin-top: 5px;
+  }
+
+  @include vp-767 {
+    margin-right: 16px;
+    margin-left: 9px;
   }
 }
 

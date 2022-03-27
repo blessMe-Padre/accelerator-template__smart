@@ -8,6 +8,7 @@
   @include vp-767 {
     width: 35px;
     height: 35px;
+    margin-top: -15px;
   }
 }
 
@@ -36,5 +37,24 @@
 
   @include vp-767 {
     display: none;
+  }
+}
+
+.logo__text {
+  @include vp-1023 {
+    margin-top: 2px;
+  }
+
+  @include vp-767 {
+    text-align: left;
+  }
+}
+
+.logo__img--footer img {
+  @include vp-767 {
+   width: 55px;
+   height: 55px;
+   margin-top: -3px;
+   margin-left: 25px;
   }
 }
