@@ -688,10 +688,6 @@ button,
   background-color: #f2f5f7;
 }
 
-.button--none {
-  display: none;
-}
-
 .button--about {
   font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
   font-style: normal;
@@ -1752,18 +1748,6 @@ button,
     padding: 0 25px;
   }
 
-  .button--main {
-    display: none;
-  }
-
-  .button--none {
-    font-size: 14px;
-    line-height: 16px;
-    display: block;
-    padding: 13px 30px;
-    margin-left: 0;
-  }
-
   .button--about {
     min-width: 160px;
     padding: 8px;
@@ -2038,7 +2022,6 @@ button,
 
   .footer__sections {
     padding-right: 0;
-    cursor: pointer;
   }
 
   .footer__sections::before {
@@ -2061,10 +2044,6 @@ button,
     font-size: 14px;
     line-height: 135%;
     margin-bottom: 6px;
-  }
-
-  .footer-pseudo {
-    cursor: pointer;
   }
 
   .footer-pseudo::after {

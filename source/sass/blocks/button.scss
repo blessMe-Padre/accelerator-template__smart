@@ -24,28 +24,12 @@
     font-size: 18px;
     margin-left: 44px;
   }
-
-  @include vp-767 {
-    display: none;
-  }
 }
 
 .button--main:hover,
 .button--main:focus {
   color: $color-dodger-blue;
   background-color: $color-athens-aray;
-}
-
-.button--none {
-  display: none;
-
-  @include vp-767 {
-    font-size: 14px;
-    line-height: 16px;
-    display: block;
-    padding: 13px 30px;
-    margin-left: 0;
-  }
 }
 
 .button--about {

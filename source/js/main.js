@@ -129,7 +129,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   // плавный скрол до формы
-  const mainBtn = document.querySelectorAll('.button--main');
+  const mainBtn = document.querySelector('.button--main');
   const feedback = document.querySelector('.feedback');
 
   function scrollTo(el) {
@@ -140,9 +140,16 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  mainBtn.forEach((item) => {
-    item.addEventListener('click', () => {
-      scrollTo(feedback);
-    });
+  mainBtn.addEventListener('click', () => {
+    scrollTo(feedback);
+  });
+
+  // секция main - изменить текст на кнопке при wv<768px
+  window.addEventListener('resize', function () {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      mainBtn.innerHTML = 'Получить бесплатную консультацию';
+    } else {
+      mainBtn.innerHTML = 'Бесплатная консультация';
+    }
   });
 });
