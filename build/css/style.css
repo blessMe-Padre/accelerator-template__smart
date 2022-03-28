@@ -2004,7 +2004,7 @@ button,
     display: none;
   }
 
-  .footer-list-active.footer__list {
+  .footer-list-active .footer__list {
     display: block;
   }
 
