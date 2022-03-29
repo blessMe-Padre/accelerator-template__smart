@@ -64,6 +64,10 @@
   }
 }
 
+.form input:hover {
+  box-shadow: 0 0 6px $color-default-white;
+}
+
 .form input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -97,6 +101,10 @@
     height: 180px;
     margin-bottom: 22px;
   }
+}
+
+.form textarea:hover {
+  box-shadow: 0 0 6px $color-default-white;
 }
 
 .form__submit {
