@@ -738,36 +738,6 @@ button,
   background-color: #ffffff;
 }
 
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo__img img {
-  margin-right: 15px;
-}
-
-.logo__title {
-  color: #f2f5f7;
-  font-family: "Roboto Condensed", "Arial", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 29px;
-  margin: 0;
-}
-
-.logo__subtitle {
-  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0;
-}
-
 .header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -825,12 +795,12 @@ button,
 }
 
 .header__email {
-  padding-left: 13px;
+  padding-left: 6px;
   margin-right: 20px;
 }
 
 .header__tel {
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .header__button {
@@ -1248,24 +1218,6 @@ button,
   width: 100%;
 }
 
-.form--popup h2 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 140.62%;
-  margin-bottom: 4px;
-}
-
-.form--popup p {
-  max-width: 380px;
-  margin: 0;
-  margin-bottom: 38px;
-}
-
-.form--popup textarea {
-  margin-bottom: 20px;
-}
-
 .checkbox input {
   position: absolute;
   width: 1px;
@@ -1400,6 +1352,24 @@ button,
   margin-bottom: 15px;
 }
 
+.form--popup h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 140.62%;
+  margin-bottom: 4px;
+}
+
+.form--popup p {
+  max-width: 380px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.form--popup textarea {
+  margin-bottom: 20px;
+}
+
 .social__list {
   margin: 0;
   padding: 0;
@@ -1425,6 +1395,10 @@ button,
   transform: scale(1.2);
 }
 
+.footer-pseudo {
+  position: relative;
+}
+
 .footer {
   padding: 55px 0;
   color: rgba(255, 255, 255, 0.7);
@@ -1447,6 +1421,7 @@ button,
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
+  letter-spacing: 0.05em;
 }
 
 .footer__sections-wrapper {
@@ -1458,7 +1433,7 @@ button,
 }
 
 .footer__sections-wrapper .footer__list {
-  margin-right: 0;
+  margin-right: 9px;
 }
 
 .footer__list {
@@ -1469,8 +1444,9 @@ button,
   padding-right: 10px;
 }
 
-.footer__logo .logo {
-  margin-bottom: 30px;
+.footer__logo img {
+  margin-top: -5px;
+  margin-bottom: 34px;
 }
 
 .footer__sections {
@@ -1505,10 +1481,6 @@ button,
   color: #ffffff;
 }
 
-.footer-pseudo {
-  position: relative;
-}
-
 .footer__office .footer__list {
   max-width: 340px;
 }
@@ -1533,12 +1505,12 @@ button,
     margin-top: -5px;
   }
 
-  .logo__text {
-    margin-top: 2px;
-  }
-
   .header__wrapper {
     min-height: 100px;
+  }
+
+  .header__img img {
+    margin-top: -6px;
   }
 
   .header__contact {
@@ -1592,6 +1564,10 @@ button,
   .benefits__item {
     padding: 40px 30px 30px 45px;
     min-height: 360px;
+  }
+
+  .benefits__item.benefits__item--height h2 {
+    margin-bottom: 6px;
   }
 
   .benefits__item svg {
@@ -1679,20 +1655,12 @@ button,
 
   .checkbox__custom::before {
     top: 5px;
-  }
-
-  .checkbox__custom::before {
-    top: 8px;
-    left: 4px;
+    left: 0;
   }
 
   .checkbox input:checked + .checkbox__custom::after {
     top: 6px;
-  }
-
-  .checkbox input:checked + .checkbox__custom::after {
-    top: 10px;
-    left: 7px;
+    left: 2px;
   }
 
   .popup__content {
@@ -1731,10 +1699,6 @@ button,
     padding-left: 0;
   }
 
-  .footer__list-item {
-    margin-bottom: 5px;
-  }
-
   .footer__office {
     padding-left: 17px;
   }
@@ -1768,33 +1732,12 @@ button,
     margin-bottom: 10px;
   }
 
-  .logo__img img {
-    width: 35px;
-    height: 35px;
-    margin-top: -15px;
-  }
-
-  .logo__title {
-    display: none;
-  }
-
-  .logo__subtitle {
-    display: none;
-  }
-
-  .logo__text {
-    text-align: left;
-  }
-
-  .logo__img--footer img {
-    width: 55px;
-    height: 55px;
-    margin-top: -3px;
-    margin-left: 25px;
-  }
-
   .header__wrapper {
     min-height: 80px;
+  }
+
+  .header__img img {
+    margin-top: -15px;
   }
 
   .header__contact svg {
@@ -1819,7 +1762,7 @@ button,
 
   .main p {
     font-size: 14px;
-    margin-bottom: 43px;
+    margin-bottom: 46px;
   }
 
   .benefits {
@@ -1841,6 +1784,10 @@ button,
 
   .benefits__item--height {
     min-height: 325px;
+  }
+
+  .benefits__item.benefits__item--height h2 {
+    margin-bottom: 16px;
   }
 
   .benefits__item--height h2 {
@@ -1946,7 +1893,17 @@ button,
   }
 
   .checkbox__custom span {
-    padding-left: 40px;
+    padding-left: 31px;
+  }
+
+  .checkbox__custom::before {
+    top: 8px;
+    left: 5px;
+  }
+
+  .checkbox input:checked + .checkbox__custom::after {
+    top: 8px;
+    left: 5px;
   }
 
   .social__list {
@@ -1959,6 +1916,16 @@ button,
   .social__item {
     margin-right: 16px;
     margin-left: 9px;
+  }
+
+  .footer-pseudo::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: -25px;
+    width: 100vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.7);
   }
 
   .footer {
@@ -2010,24 +1977,14 @@ button,
     width: 0;
   }
 
-  .footer__logo .logo {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    margin-bottom: 15px;
-  }
-
-  .footer__logo .logo .logo__title {
-    display: block;
-  }
-
-  .footer__logo .logo .logo__subtitle {
-    display: block;
-  }
-
   .footer__logo {
     display: block;
     text-align: center;
+  }
+
+  .footer__logo img {
+    margin-left: 25px;
+    margin-bottom: 19px;
   }
 
   .footer__sections {
@@ -2054,16 +2011,6 @@ button,
     font-size: 14px;
     line-height: 135%;
     margin-bottom: 6px;
-  }
-
-  .footer-pseudo::after {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: -25px;
-    width: 100vw;
-    height: 1px;
-    background: rgba(255, 255, 255, 0.7);
   }
 
   .footer__office {

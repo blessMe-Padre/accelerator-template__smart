@@ -31,6 +31,7 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 20px;
+  letter-spacing: 0.05em;
 
   @include vp-767 {
     padding: 20px 0;
@@ -62,7 +63,7 @@
 }
 
 .footer__sections-wrapper .footer__list {
-  margin-right: 0;
+  margin-right: 9px;
 }
 
 .footer__list {
@@ -99,27 +100,6 @@
   }
 }
 
-.footer__logo .logo {
-  margin-bottom: 30px;
-
-  @include vp-767 {
-    justify-content: flex-start;
-    margin-bottom: 15px;
-  }
-}
-
-.footer__logo .logo .logo__title {
-  @include vp-767 {
-    display: block;
-  }
-}
-
-.footer__logo .logo .logo__subtitle {
-  @include vp-767 {
-    display: block;
-  }
-}
-
 .footer__logo {
   @include vp-1023 {
     grid-column: 1 / 3;
@@ -130,6 +110,16 @@
   @include vp-767 {
     display: block;
     text-align: center;
+  }
+}
+
+.footer__logo img {
+  margin-top: -5px;
+  margin-bottom: 34px;
+
+  @include vp-767 {
+    margin-left: 25px;
+    margin-bottom: 19px;
   }
 }
 
@@ -160,10 +150,6 @@
 
 .footer__list-item {
   margin-bottom: 6px;
-
-  @include vp-1023 {
-    margin-bottom: 5px;
-  }
 }
 
 .footer__list-item address {
@@ -197,22 +183,6 @@
 
   &:hover {
     color: $color-default-white;
-  }
-}
-
-.footer-pseudo {
-  position: relative;
-
-  @include vp-767 {
-    &::after {
-      position: absolute;
-      content: "";
-      bottom: 0;
-      left: -25px;
-      width: 100vw;
-      height: 1px;
-      background: $color-gray;
-    }
   }
 }
 

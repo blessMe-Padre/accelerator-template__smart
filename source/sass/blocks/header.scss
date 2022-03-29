@@ -20,6 +20,16 @@
   }
 }
 
+.header__img img {
+  @include vp-1023 {
+    margin-top: -6px;
+  }
+
+  @include vp-767 {
+    margin-top: -15px;
+  }
+}
+
 .header__contact {
   display: flex;
   flex-wrap: wrap;
@@ -62,7 +72,7 @@
 }
 
 .header__email {
-  padding-left: 13px;
+  padding-left: 6px;
   margin-right: 20px;
 
   @include vp-1023 {
@@ -71,7 +81,7 @@
 }
 
 .header__tel {
-  padding-right: 10px;
+  padding-right: 15px;
 
   @include vp-1023 {
     padding-right: 14px;

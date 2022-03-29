@@ -30,7 +30,7 @@
   }
 
   @include vp-767 {
-    padding-left: 40px;
+    padding-left: 31px;
   }
 }
 
@@ -52,11 +52,12 @@
 
   @include vp-1023 {
     top: 5px;
+    left: 0;
   }
 
-  @include vp-1023 {
+  @include vp-767 {
     top: 8px;
-    left: 4px;
+    left: 5px;
   }
 }
 
@@ -80,11 +81,12 @@
 
   @include vp-1023 {
     top: 6px;
+    left: 2px;
   }
 
-  @include vp-1023 {
-    top: 10px;
-    left: 7px;
+  @include vp-767 {
+    top: 8px;
+    left: 5px;
   }
 }
 

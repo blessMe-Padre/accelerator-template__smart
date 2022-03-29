@@ -61,6 +61,16 @@
   }
 }
 
+.benefits__item.benefits__item--height h2 {
+  @include vp-1023 {
+    margin-bottom: 6px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 16px;
+  }
+}
+
 .benefits__item--height h2 {
   @include vp-767 {
     margin-bottom: 16px;

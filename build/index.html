@@ -15,16 +15,13 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="logo">
-            <div class="logo__img">
-              <a>
-                <img src="img/logo.svg" width="55" height="55" alt="логотип">
-              </a>
-            </div>
-            <div class="logo__text">
-              <p class="logo__title">Smart Device</p>
-              <p class="logo__subtitle">умные технологии</p>
-            </div>
+          <div class="header__img">
+            <a>
+              <picture>
+                <source media="(max-width:767px)" srcset="img/logo.svg" width="35" height="55">
+                <img src="img/logo.png" width="215" height="55" alt="логотип">
+              </picture>
+            </a>
           </div>
           <div class="header__contact">
             <a href="mailto:info@sd.ru" class="header__email" aria-label="Написать письмо">
@@ -161,7 +158,7 @@
                     <img src="img/content/services/2.jpg" width="350" height="650"
                       srcset="img/content/services/2@2x.jpg 2x" alt="печатная плата">
                   </picture>
-                  <p>Монтаж печатных&nbsp;плат</p>
+                  <p>Монтаж печатных плат</p>
                 </div>
               </a>
             </li>
@@ -205,7 +202,7 @@
 
                 <div class="form__checkbox checkbox">
                   <input id="formAgreement" checked type="checkbox" name="agreement" required>
-                  <label for="formAgreement" class="checkbox__custom"><span>Я согласен на обработку моих персональных
+                  <label for="formAgreement" class="checkbox__custom"><span>Я согласен на обработку персональных
                       данных</span>
                   </label>
                 </div>
@@ -255,17 +252,9 @@
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__logo">
-            <div class="logo">
-              <div class="logo__img logo__img--footer">
-                <a>
-                  <img src="img/logo.svg" width="55" height="55" alt="логотип">
-                </a>
-              </div>
-              <div class="logo__text">
-                <p class="logo__title">Smart Device</p>
-                <p class="logo__subtitle">умные технологии</p>
-              </div>
-            </div>
+            <a>
+              <img src="img/logo.png" width="215" height="55" alt="логотип">
+            </a>
             <div class="social">
               <ul class="social__list">
                 <li class="social__item">
