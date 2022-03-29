@@ -742,6 +742,10 @@ button,
   background-color: #ffffff;
 }
 
+.button__hidden {
+  display: none;
+}
+
 .header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -1744,6 +1748,14 @@ button,
   .button--form {
     min-width: 100%;
     margin-bottom: 10px;
+  }
+
+  .button__show {
+    display: none;
+  }
+
+  .button__hidden {
+    display: block;
   }
 
   .header__wrapper {

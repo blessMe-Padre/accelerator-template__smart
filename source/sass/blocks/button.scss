@@ -105,3 +105,17 @@
   color: $color-dark-blue;
   background-color: $color-default-white;
 }
+
+.button__show {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.button__hidden {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
