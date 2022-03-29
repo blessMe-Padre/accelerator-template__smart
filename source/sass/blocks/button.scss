@@ -5,6 +5,7 @@
   text-transform: uppercase;
   box-sizing: border-box;
   transition: all 0.4s ease-in;
+  border-radius: 3px;
 }
 
 .button--main {
@@ -23,6 +24,15 @@
   @include vp-1023 {
     font-size: 18px;
     margin-left: 44px;
+  }
+
+  @include vp-767 {
+    display: block;
+    font-size: 14px;
+    margin-left: 0;
+    line-height: 16px;
+    padding: 10px 5px;
+    min-width: 270px;
   }
 }
 

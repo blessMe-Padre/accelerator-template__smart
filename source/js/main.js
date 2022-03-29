@@ -56,8 +56,10 @@ window.addEventListener('DOMContentLoaded', () => {
   const userName = document.querySelector('#loginName');
 
 
-  headerBnt.addEventListener('click', openPopup);
-  closeBtn.addEventListener('click', closePopup);
+  if (popup) {
+    headerBnt.addEventListener('click', openPopup);
+    closeBtn.addEventListener('click', closePopup);
+  }
 
   function openPopup() {
     userName.focus();
@@ -81,11 +83,13 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   // закрываем окно по клику вне попапа
-  popup.addEventListener('click', function (evt) {
-    if (evt.target === popupBody) {
-      closePopup();
-    }
-  });
+  if (popup) {
+    popup.addEventListener('click', function (evt) {
+      if (evt.target === popupBody) {
+        closePopup();
+      }
+    });
+  }
 
   // localstorage
   const formInput = document.querySelectorAll('input');
@@ -153,3 +157,4 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
