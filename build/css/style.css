@@ -1517,6 +1517,10 @@ button,
     margin-top: -5px;
   }
 
+  .header {
+    position: static;
+  }
+
   .header__wrapper {
     min-height: 100px;
   }
@@ -1550,6 +1554,7 @@ button,
   }
 
   .main {
+    margin-top: -15px;
     min-height: 640px;
     padding-left: 0;
   }
