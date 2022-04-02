@@ -1054,6 +1054,7 @@ button,
 }
 
 .feedback {
+  position: relative;
   min-height: 840px;
   padding: 150px 0;
   display: -webkit-box;
@@ -1061,10 +1062,10 @@ button,
   display: flex;
   border: none;
   background-color: #00b2ff;
-  background-image: url("../img/background/feedback-bg.jpg");
+  background-image: url("../img/paper-airplane.png"), url("../img/background/feedback-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: 25% 44%, center;
+  background-size: auto auto, cover;
 }
 
 .feedback__item {
@@ -1530,9 +1531,21 @@ button,
   max-width: 340px;
 }
 
+@media (max-width: 1640px) {
+  .feedback {
+    background-position: 5% 44%, center;
+  }
+}
+
 @media (max-width: 1439px) {
   .container {
     padding: 0 40px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .feedback {
+    background-size: 340px auto, cover;
   }
 }
 
@@ -2093,11 +2106,6 @@ button,
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .main {
     background-image: url("../img/background/main-bg@2x.jpg");
-    background-size: cover;
-  }
-
-  .feedback {
-    background-image: url("../img/background/feedback-bg@2x.jpg");
     background-size: cover;
   }
 }

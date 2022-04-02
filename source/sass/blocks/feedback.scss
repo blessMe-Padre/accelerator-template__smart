@@ -1,17 +1,21 @@
 .feedback {
+  position: relative;
   min-height: 840px;
   padding: 150px 0;
   display: flex;
   border: none;
   background-color: $color-dodger-blue;
-  background-image: url("../img/background/feedback-bg.jpg");
+  background-image: url("../img/paper-airplane.png"), url("../img/background/feedback-bg.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: 25% 44%, center;
+  background-size: auto auto, cover;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/background/feedback-bg@2x.jpg");
-    background-size: cover;
+  @media (max-width: 1640px) {
+    background-position: 5% 44%, center;
+  }
+
+  @include vp-1279 {
+    background-size: 340px auto, cover;
   }
 
   @include vp-1023 {
