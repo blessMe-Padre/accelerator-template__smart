@@ -1371,6 +1371,13 @@ button,
   transition: all 0.3s linear;
 }
 
+.popup__btn:focus,
+.popup__btn:hover {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 .form--popup input {
   margin-bottom: 15px;
 }

@@ -56,6 +56,11 @@
   transition: all 0.3s linear;
 }
 
+.popup__btn:focus,
+.popup__btn:hover {
+  transform: rotate(90deg);
+}
+
 .form--popup input {
   margin-bottom: 15px;
 }
