@@ -910,7 +910,6 @@ button,
   margin-bottom: 15px;
 }
 
-.benefits__item:focus svg,
 .benefits__item:hover svg {
   fill: #f2f5f7;
 }
@@ -927,12 +926,10 @@ button,
   margin-bottom: 13px;
 }
 
-.benefits__item:focus h2,
 .benefits__item:hover h2 {
   color: #f2f5f7;
 }
 
-.benefits__item:focus,
 .benefits__item:hover {
   background-color: #00b2ff;
 }
@@ -948,7 +945,6 @@ button,
   color: #041827;
 }
 
-.benefits__item:focus p,
 .benefits__item:hover p {
   color: #f2f5f7;
 }
@@ -1094,8 +1090,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1650,13 +1644,17 @@ button,
     margin-bottom: 7px;
   }
 
+  .form__item {
+    gap: 30px;
+  }
+
   .form p {
     margin-top: 0;
     margin-bottom: 26px;
   }
 
   .form input {
-    width: 320px;
+    width: 100%;
   }
 
   .form textarea {
@@ -1896,6 +1894,9 @@ button,
   }
 
   .form__item {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 12px;
   }
 

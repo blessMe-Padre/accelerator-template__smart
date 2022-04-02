@@ -19,11 +19,16 @@
 
 .form__item {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
 
+  @include vp-1023 {
+    gap: 30px;
+  }
+
   @include vp-767 {
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 12px;
   }
 }
@@ -55,7 +60,7 @@
   margin-bottom: 20px;
 
   @include vp-1023 {
-    width: 320px;
+    width: 100%;
   }
 
   @include vp-767 {

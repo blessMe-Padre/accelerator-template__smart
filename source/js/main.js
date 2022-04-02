@@ -81,6 +81,7 @@ window.addEventListener('DOMContentLoaded', () => {
       if (popup.classList.contains('popup--show')) {
         evt.preventDefault();
         popup.classList.remove('popup--show');
+        body.classList.remove('page__body--lock');
       }
     }
   });

@@ -90,7 +90,6 @@
   }
 }
 
-.benefits__item:focus svg,
 .benefits__item:hover svg {
   fill: $color-athens-aray;
 }
@@ -115,12 +114,10 @@
   }
 }
 
-.benefits__item:focus h2,
 .benefits__item:hover h2 {
   color: $color-athens-aray;
 }
 
-.benefits__item:focus,
 .benefits__item:hover {
   background-color: $color-dodger-blue;
 }
@@ -140,7 +137,6 @@
   }
 }
 
-.benefits__item:focus p,
 .benefits__item:hover p {
   color: $color-athens-aray;
 }
