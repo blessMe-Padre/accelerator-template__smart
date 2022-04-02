@@ -24,16 +24,16 @@
             </a>
           </div>
           <div class="header__contact">
-            <a href="mailto:info@sd.ru" class="header__email" aria-label="Написать письмо">
+            <a href="mailto:info@sd.ru" class="header__email" aria-label="Написать письмо" tabindex="7">
               <svg width="20" height="20">
                 <use xlink:href="img/sprite/sprite.svg#email"></use>
               </svg>info@sd.ru</a>
-            <a href="tel:+74950005252" class="header__tel" aria-label="позвонить">
+            <a href="tel:+74950005252" class="header__tel" aria-label="позвонить" tabindex="8">
               <svg width="21" height="20">
                 <use xlink:href="img/sprite/sprite.svg#phone"></use>
               </svg>+7 (495) 000 52 52</a>
           </div>
-          <button class="header__button button">Заказать звонок</button>
+          <button class="header__button button" tabindex="9">Заказать звонок</button>
         </div>
       </div>
     </header>
@@ -43,7 +43,7 @@
         <div class="container">
           <h2>Печатные платы</h2>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="button button--main" href="#">
+          <a class="button button--main" href="#" tabindex="10">
             <span class="button__show">Получить бесплатную консультацию</span>
             <span class="button__hidden">бесплатная консультация</span>
           </a>
@@ -123,7 +123,7 @@
                 продукции, производимой внутри компании. Использование инновационных технологий помогает экономить
                 деньги и&nbsp;время наших клиентов.</p>
 
-              <button class="button button--about">Подробнее</button>
+              <button class="button button--about" tabindex="11">Подробнее</button>
             </div>
           </div>
         </div>
@@ -139,7 +139,7 @@
           </h2>
           <ul class="services__list">
             <li class="services__item">
-              <a href="#">
+              <a href="#" tabindex="12">
                 <div class="services__card">
                   <picture>
                     <source srcset="img/content/services/1.webp 1x, img/content/services/1@2x.webp 2x"
@@ -154,7 +154,7 @@
               </a>
             </li>
             <li class="services__item">
-              <a href="#">
+              <a href="#" tabindex="13">
                 <div class="services__card">
                   <picture>
                     <source srcset="img/content/services/2.webp 1x, img/content/services/2@2x.webp 2x"
@@ -169,7 +169,7 @@
               </a>
             </li>
             <li class="services__item">
-              <a href="#">
+              <a href="#" tabindex="14">
                 <div class="services__card">
                   <picture>
                     <source srcset="img/content/services/3.webp 1x, img/content/services/3@2x.webp 2x"
@@ -195,20 +195,21 @@
               <p>Мы проконсультируем Вас бесплатно</p>
               <div class="form__item">
                 <label class="visually-hidden" for="user-name">Имя</label>
-                <input type="text" id="user-name" name="name" placeholder="Имя" required pattern="^[a-zA-Zа-яА-Я\s]+$">
+                <input type="text" id="user-name" name="name" placeholder="Имя" required pattern="^[a-zA-Zа-яА-Я\s]+$"
+                  tabindex="15">
 
                 <label class="visually-hidden" for="user-phone">Номер телефона</label>
                 <input type="tel" id="phone" name="phone" placeholder="Телефон" title="+79991234567" required
-                  minlength="19">
+                  minlength="19" tabindex="16">
               </div>
               <label class="visually-hidden" for="appointment-text">Текст письма:</label>
-              <textarea id="appointment-text" name="text" placeholder="Ваш вопрос"></textarea>
+              <textarea id="appointment-text" name="text" placeholder="Ваш вопрос" tabindex="17"></textarea>
 
               <div class="form__submit">
-                <button class="button button--form" type="submit">задать вопрос</button>
+                <button class="button button--form" type="submit" tabindex="19">задать вопрос</button>
 
                 <div class="form__checkbox checkbox">
-                  <input id="formAgreement" checked type="checkbox" name="agreement" required>
+                  <input id="formAgreement" checked type="checkbox" name="agreement" required tabindex="18">
                   <label for="formAgreement" class="checkbox__custom"><span>Я согласен на обработку персональных
                       данных</span>
                   </label>
