@@ -13,7 +13,7 @@
 }
 
 .social__item {
-  margin-right: 25px;
+  margin-right: 12px;
   transition: all 0.3s linear;
 
   @include vp-1023 {
@@ -26,6 +26,15 @@
     margin-right: 16px;
     margin-left: 9px;
   }
+}
+
+.social__item-link {
+  width: 40px;
+  height: 40px;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social__item:hover {

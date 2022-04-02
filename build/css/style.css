@@ -1406,10 +1406,25 @@ button,
 }
 
 .social__item {
-  margin-right: 25px;
+  margin-right: 12px;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+.social__item-link {
+  width: 40px;
+  height: 40px;
+  padding: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .social__item:hover {
@@ -1469,7 +1484,7 @@ button,
 
 .footer__logo img {
   margin-top: -5px;
-  margin-bottom: 34px;
+  margin-bottom: 29px;
 }
 
 .footer__sections {
