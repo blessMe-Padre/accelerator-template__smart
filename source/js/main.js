@@ -55,6 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const closeBtn = document.querySelector('.popup__btn');
   const popup = document.querySelector('.popup');
   const popupBody = document.querySelector('.popup__body');
+  const modal = document.querySelector('.popup__content');
   const body = document.querySelector('.page__body');
   const userName = document.querySelector('#loginName');
 
@@ -62,18 +63,31 @@ window.addEventListener('DOMContentLoaded', () => {
   if (popup) {
     headerBnt.addEventListener('click', openPopup);
     closeBtn.addEventListener('click', closePopup);
+    focusRestrict();
   }
 
   function openPopup() {
-    userName.focus();
     popup.classList.add('popup--show');
     body.classList.add('page__body--lock');
+    popupBody.setAttribute('tabindex', '0');
+    popupBody.focus();
+    userName.focus();
   }
 
   function closePopup() {
     popup.classList.remove('popup--show');
     body.classList.remove('page__body--lock');
   }
+
+  function focusRestrict(event) {
+    document.addEventListener('focus', function (evt) {
+      if (popupBody && !popupBody.contains(evt.target)) {
+        evt.stopPropagation();
+        closeBtn.focus();
+      }
+    }, true);
+  }
+
 
   // закрываем окно по esc
   window.addEventListener('keydown', function (evt) {

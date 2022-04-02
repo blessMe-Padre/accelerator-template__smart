@@ -136,6 +136,11 @@
   margin-top: 10px;
 }
 
+.form__item--popup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form__item--popup input {
   display: block;
   width: 100%;
