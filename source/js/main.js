@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable new-cap */
+import IMask from 'imask';
 
 window.addEventListener('DOMContentLoaded', () => {
   const footer = document.querySelector('.footer__wrapper');
@@ -148,4 +151,16 @@ window.addEventListener('DOMContentLoaded', () => {
     scrollTo(feedback);
   });
 
+  // маска телефона
+  let maskOptions = {
+    mask: '+{7}(000)000-00-00',
+  };
+
+  let element2 = document.getElementById('phone');
+  let mask2 = IMask(element2, maskOptions);
+
+  if (popup) {
+    let element = document.getElementById('user-phone');
+    let mask1 = IMask(element, maskOptions);
+  }
 });

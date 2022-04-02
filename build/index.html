@@ -195,7 +195,8 @@
                 <input type="text" id="user-name" name="name" placeholder="Имя" required pattern="[a-zA-Zа-яА-Я]+">
 
                 <label class="visually-hidden" for="user-phone">Номер телефона</label>
-                <input type="tel" id="phone" name="phone" placeholder="Телефон" title="+79991234567" required>
+                <input type="tel" id="phone" name="phone" placeholder="Телефон" title="+79991234567" required
+                  minlength="19">
               </div>
               <label class="visually-hidden" for="appointment-text">Текст письма:</label>
               <textarea id="appointment-text" name="text" placeholder="Ваш вопрос"></textarea>
@@ -228,7 +229,7 @@
 
                 <label class="visually-hidden" for="user-phone">Номер телефона</label>
                 <input type="tel" id="user-phone" name="phone" placeholder="Телефон" title="+79991234567" required
-                  pattern="[0-9]{10}">
+                  minlength="19">
               </div>
               <label class="visually-hidden" for="appointment-text">Текст письма:</label>
               <textarea id="appointment-popup" name="text" placeholder="Ваш вопрос"></textarea>
